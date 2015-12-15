@@ -14,7 +14,9 @@
   <div id="header">INSOMNIACS TIME TRAVELERS</div>
   <div id="nav"><a href="index.html">HOME</a> <a href="about.html">ABOUT</a> <a href="blog.html">BLOG</a> <a href="form.html">FORM</a> <a href="boxes.html">BOXES</a></div>
   <h1>Insomniac Time Travelers</h1>
-  <h2>Are you tired of traveling alone?</h2>
+  <h2 id="greeting"></h2>
+  <h3>Are you tired of traveling alone?</h3>
+  <div>I love folks from <span id="town"></span>!</div>
   <p>Come join me.</p>
   <div id="events">
     <h2>Upcoming Events</h2>
@@ -23,15 +25,26 @@
     12.15.15: The Kid</p>
   <a href="mailto:ellen@designs.com">RSVP</a>
   </div>
+
   <h3>Community Rules</h3>
   <ol>
   <li>Must be able to stay awake for 48 hours</li>
   <li>Must have at least 2 travel desination photographs</li>
   <li>Must have seen at least one Doctor Who episode</li>
 </ol>
+<h2>I was so much older then...I'm younger than that now.</h2>
 <iframe width="420" height="315" src="https://www.youtube.com/embed/hRsfKK34SFY" frameborder="0" allowfullscreen></iframe>
+<iframe width="500" height="315" src="https://www.youtube.com/embed/z7Mirkd3CT4?rel=0" frameborder="0" allowfullscreen></iframe>
 <div id="footer">see ya later (or earlier)</div>
 </div>
 
+<script>
+  var userName = prompt("What is your name");
+  console.log(userName);
+  var welcomeMsg = "Welcome to my world " + userName + "!"
+    document.getElementById('greeting').textContent = welcomeMsg;
+  var town = prompt("What is your hometown");
+    document.querySelector('#town').textContent = town;
+</script>
 </body>
 </html>
